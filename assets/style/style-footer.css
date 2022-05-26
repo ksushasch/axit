@@ -1,0 +1,31 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.footer_container {
+	max-width: calc(1170px + 15px * 2);
+	padding: 0 15px;
+	text-align: center;
+}
+
+.footer {
+	background-color: #000000;
+	padding: 35px 0 27px;
+}
+
+.footer_container_social > a > img {
+	margin: 0 37px 0 0;
+}
+
+.footer_container_text {
+	margin: 27px 0 0;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.5);
+}

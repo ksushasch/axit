@@ -1,0 +1,114 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.wrapper_customers {
+	width: 100%;
+	padding: 55px 0 100px;
+}
+
+.container_customers {
+	max-width: calc(1170px + 15px * 2);
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container_customers_title {
+	padding: 60px 0;
+	text-align: center;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.container_customers_line {
+	width: 170px;
+	height: 1px;
+	background-color: #ec7979;
+	margin: 0 auto;
+}
+
+.container_customers_subtitle {
+	padding: 40px 0 83px 0;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #86878b;
+}
+
+.container_customers_comments {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.container_customers_comments_123 {
+	max-width: 370px;
+	width: 100%;
+}
+
+.container_customers_comments_about {
+	position: relative;
+	background-color: #e2e2e2;
+	border-radius: 10px;
+}
+
+.container_customers_comments_about_text {
+	margin: 0 30px 0 0;
+	padding: 38px 0;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #86878b;
+}
+
+.container_customers_comments_about_svg {
+	position: absolute;
+	left: 70px;
+	top: 99%;
+}
+
+.container_customers_image {
+	margin: 45px 0 0;
+	display: flex;
+	align-items: flex-start;
+}
+
+.container_customers_manager_icon {
+	flex: 0 0 70px;
+}
+
+.container_customers_manager_article > h4 {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 33px;
+	color: #000000;
+}
+
+.container_customers_manager_article {
+	margin: 0 0 0 30px;
+	padding: 10px 0 0;
+}
+
+.container_customers_manager_article > p {
+	margin: 25px 0 0;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+}
