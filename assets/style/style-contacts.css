@@ -6,7 +6,7 @@
 
 .container_contact_us {
     max-width: calc(1170px + 15px * 2);
-    padding: 0 15px;
+    padding: 50px 15px;
     margin: 0 auto;
 }
 
@@ -43,4 +43,42 @@
     line-height: 21px;
     text-align: center;
     color: #86878B;
+}
+
+.form_contact_us_input > input {
+    width: 500px;
+	height: 38px;
+	border: none;
+	border-bottom: 1px solid #BDBDBD;
+	margin: 38px 0;
+}
+
+.message {
+    width: 500px;
+	height: 38px;
+	border: none;
+	border-bottom: 1px solid #BDBDBD;
+	margin: 38px 0;
+}
+
+.container_contact_us_input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_contact_us > button {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background-color: #EC7979;
+    width: 470px;
+	height: 60px;
+    border: none;
+    display: block;
+	margin: 0 auto;
 }
