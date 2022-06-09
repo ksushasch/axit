@@ -63,8 +63,7 @@
 }
 
 .container_customers_comments_about_text {
-	margin: 0 30px 0 0;
-	padding: 38px 0;
+	padding: 38px 10px;
 	font-family: "Raleway";
 	font-style: normal;
 	font-weight: 400;
@@ -111,4 +110,61 @@
 	font-size: 18px;
 	line-height: 21px;
 	color: #000000;
+}
+
+@media (max-width: 1024px) {
+
+	.container_customers_title {
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	.container_customers_subtitle {
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.container_customers_comments_about_text {
+		text-align: center;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.container_customers_comments_123 {
+		margin: 0 20px 0 0;
+	}
+
+	.container_customers_manager_article {
+		margin: 0 0 0 10px;
+	}
+
+	.container_customers_manager_article > h4 {
+		margin-bottom: 20px;
+		font-size: 18px;
+		line-height: 25px;
+	}
+
+	.container_customers_manager_article > h5 {
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
+
+
+@media (max-width: 1024px) {
+	.container_customers_title {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	.container_customers_subtitle {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
+
+@media (max-width: 768px) {
+	
 }

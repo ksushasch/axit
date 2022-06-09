@@ -6,3 +6,16 @@
 @import url("./style-contacts.css");
 @import url("./style-awesome.css");
 @import url("./style-tabs.css");
+@import url(./style-options.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    max-width: calc(1170px + 15px * 2);
+	padding: 0 15px;
+	margin: 0 auto;
+}

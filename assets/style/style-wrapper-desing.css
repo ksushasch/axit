@@ -8,6 +8,8 @@
 	max-width: calc(1170px + 15px * 2);
 	padding: 0 15px;
 	margin: 0 auto;
+	z-index: 1;
+	position: relative;
 }
 
 .wrapper_desing {
@@ -15,6 +17,18 @@
 	background-size: cover;
 	width: 100%;
 	padding: 50px 170px;
+	position: relative;
+}
+
+.dark_bg {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+
 }
 
 .container_desing_title {
@@ -59,4 +73,30 @@
 	color: #ffffff;
 	background-color: transparent;
 	border: 1px solid #ffffff;
+}
+
+@media (max-width: 1024px) {
+	.wrapper_desing {
+		background-position: top center;
+	}
+
+	.container_desing {
+		text-align: center;
+	}
+
+	.container_desing_title {
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	.container_desing_text {
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
+
+@media (max-width: 768px) {
+	.wrapper_desing {
+		background-position: top center;
+	}
 }

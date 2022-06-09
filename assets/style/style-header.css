@@ -12,7 +12,6 @@
 .header {
 	padding: 0 170px 0 115px;
 	width: 100%;
-	height: 75px;
 	position: sticky;
 	top: 0;
 	left: 0;
@@ -23,6 +22,11 @@
 .header_content {
 	display: flex;
 	justify-content: space-between;
+	padding: 22px;
+}
+
+.header_burger {
+	display: none;
 }
 
 a {
@@ -42,4 +46,37 @@ a {
 
 .header_content_link > a {
 	margin: 0 50px 0 0;
+}
+
+@media (max-width: 1024px) {
+	.header {
+		padding: 0 20px 0 115px;
+	}
+
+	.header_burger {
+		display: none;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.header {
+		width: 100%;
+		padding: 0;
+		position: sticky;
+		top: 0;
+		left: 0;
+		z-index: 999;
+		background-color: #000000;
+	}
+
+	.header_content > nav {
+		display: none;
+	}
+
+	.header_burger {
+		display: flex;
+		align-items: flex-end;
+	}
 }

@@ -1,0 +1,122 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper_options {
+	width: 100%;
+	padding: 0 15px;
+	background-color: #f5f5f5;
+}
+
+.content_options {
+	max-width: calc(1170px + 15px * 2);
+	padding: 50px 0;
+	margin: 0 auto;
+}
+
+.content_options_title {
+	margin: 0 0 55px 0;
+	text-align: center;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	text-transform: uppercase;
+	line-height: 42px;
+	color: #000000;
+	font-size: 36px;
+}
+
+.content_options_title_line {
+	margin: 0 auto;
+	border: 1px solid #ec7979;
+	width: 170px;
+}
+
+.content_options_subtitle {
+	text-align: center;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	line-height: 21px;
+	margin: 40px 59px 80px;
+}
+
+.container_options {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 15px;
+	align-items: flex-end;
+}
+
+.container__item {
+	width: 100%;
+}
+
+.active_option {
+	margin-bottom: 50px;
+
+}
+
+
+.container__title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #333333;
+	padding: 20px;
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 33px;
+}
+
+.container__price {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	margin: 1px 0;
+	background-color: #333333;
+	color: #ffffff;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+}
+
+.container__free {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #333333;
+	color: rgba(255, 255, 255, 0.5);
+	font-family: "Raleway";
+	padding: 20px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.container__space {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	border: 2px solid #f5f5f5;
+	color: #86878b;
+	font-family: "Raleway";
+	font-style: normal;
+	padding: 20px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+	
