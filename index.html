@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Barlow+Semi+Condensed:wght@200&family=Hepta+Slab:wght@200;300&family=Open+Sans:ital,wght@0,400;1,700&family=Raleway&family=Vollkorn+SC:wght@700&display=swap"
         rel="stylesheet">
@@ -18,7 +18,27 @@
 <body>
     <header class="header">
         <div class="header_container header_content">
-            <img class="header_content_logo" src="./img/logo.png" width="183px" height="75px" alt="logo">
+            <div class="header_logo">
+                <svg width="53" height="32" viewBox="0 0 53 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.6011 0.456055H16.1137L26.3906 31.1461H20.7993L18.2006 23.4952H8.43549L5.87609 31.1461H0.28479L10.6011 0.456055ZM17.2162 19.3023L13.3574 6.63729L9.34112 19.3023H17.2162Z"
+                        fill="white" />
+                    <path
+                        d="M32.3708 0.456055L39.3008 11.7811L46.1915 0.456055H52.0978L42.4115 16.0172L51.7828 31.1461H45.8765L39.3008 20.2533L32.6858 31.1461H26.7401L36.1114 16.0172L26.4251 0.456055H32.3708Z"
+                        fill="white" />
+                </svg>
+                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.912598 31.1461V0.456055H6.3464V31.1461H0.912598Z" fill="#EC7979" />
+                    <path d="M33.0875 5.68633H24.1493V31.1461H18.7549V5.68633H9.81665V0.456055H33.0875V5.68633Z"
+                        fill="#EC7979" />
+                </svg>
+            </div>
+            <div class="header_burger">
+                <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H24V3H0V0ZM0 7.5H24V10.5H0V7.5ZM0 15H24V18H0V15Z" fill="white" />
+                </svg>
+
+            </div>
             <nav class="header_content_link">
                 <a href="#">Features</a>
                 <a href="#">About</a>
@@ -30,15 +50,142 @@
     </header>
 
     <section class="banner">
-        <div class=""></div>
-        <div class="container_banner">
-            <div class="content_banner">
-                <img src="./img/logo.png" width="270px" height="100px" alt="logo">
-                <h1 class="content_banner_title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
-                <div class="content_banner_line"></div>
-                <p class="content_banner_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <button type="button">Download</button>
+        <div class="content">
+            <div class="container_banner content">
+                <div class="banner_info">
+                    <svg width="270" height="100" viewBox="0 0 270 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.3089 23H31.161L51.3924 78H40.3853L35.2693 64.2887H16.0456L11.0071 78H0L20.3089 23ZM33.3314 56.7747L25.735 34.0775L17.8284 56.7747H33.3314Z"
+                            fill="white" />
+                        <path
+                            d="M63.165 23L76.8076 43.2958L90.3728 23H102L82.9313 50.8873L101.38 78H89.7526L76.8076 58.4789L63.7851 78H52.0804L70.5289 50.8873L51.4602 23H63.165Z"
+                            fill="white" />
+                        <path d="M107 78V23H117.64V78H107Z" fill="#EC7979" />
+                        <path d="M170 32.3732H152.499V78H141.936V32.3732H124.435V23H170V32.3732Z" fill="#EC7979" />
+                    </svg>
+                    <h1>
+                        MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
+                    </h1>
+                    <div class="banner_line"></div>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit
+                    </p>
+                    <button>
+                        Download
+                    </button>
+                </div>
+                <form class="banner_form">
+                    <h3>Try Your <span>FREE</span> Trial Today</h3>
+                    <div class="banner_fields">
+                        <input type="text" name="Name" placeholder="Name">
+                        <input type="email" name="Email" placeholder="Email">
+                        <input type="password" name="Password" placeholder="Password">
+                    </div>
+                    <button>Get Started</button>
+                </form>
             </div>
+        </div>
+    </section>
+
+    <section class="wrapper_tabs">
+        <div class="container_tabs">
+            <div class="container_tabs_title">
+                <button class="container_tabs_title_tab_1 active">TAB 1</button>
+                <button class="container_tabs_title_tab_2">TAB 2</button>
+                <button type="button" class="container_tabs_title_tab_3">TAB 3</button>
+                <button class="container_tabs_line"></button>
+            </div>
+            <div class="container_tabs_content">
+                <article class="container_tabs_content_article">
+                    <h3 class="container_tabs_content_title">Tabs with soft transitioning effect.</h3>
+                    <p class="container_tabs_content_title_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>
+                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra <br>
+                        justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque <br>
+                        penatibus et magnis dis parturient montes. <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>
+                        bibendum <br>
+                    </p>
+                    <button type="submit" class="container_tabs_content_button_download">Download</button>
+                </article>
+                <img src="./assets/img/img-tabs/Rectangle 111.png" width="470" height="500" alt="figure">
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper_awesome">
+        <div class="container_awesome">
+            <h6 class="content_awesome_title">WHY THIS IS AWESOME</h6>
+            <div class="content_awesome_line"></div>
+            <p class="content_awesome_title_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <div class="content_awesome">
+                <div class="container_content_box">
+                    <img class="icon1" src="./assets/img/img-awesome/about_icon_1.png" alt="lamp">
+                    <h4 class="wrap">Thoughtful Design</h4>
+                    <p class="about_wrap">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+                    </p>
+                </div>
+                <div class="container_content_box">
+                    <img class="icon2" src="./assets/img/img-awesome/about_icon_2.png" alt="button">
+                    <h4 class="wrap">Thoughtful Design</h4>
+                    <p class="about_wrap">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+                    </p>
+                </div>
+                <div class="container_content_box">
+                    <img class="icon3" src="./assets/img/img-awesome/about_icon_3.png" alt="light">
+                    <h4 class="wrap">Thoughtful Design</h4>
+                    <p class="about_wrap">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper_options">
+        <div class="content_options">
+            <h2 class="content_options_title">pricing options</h2>
+            <div class="content_options_title_line"></div>
+            <h3 class="content_options_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+            <div class="container_options">
+                <div class="container__item">
+                    <div class="container__title">Basic</div>
+                    <div class="container__price">$10</div>
+                    <div class="container__free">Free for life</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                </div>
+                <div class="container__item active_option">
+                    <div class="container__title">Optima</div>
+                    <div class="container__price">$20</div>
+                    <div class="container__free">Free for life</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                </div>
+                <div class="container__item">
+                    <div class="container__title">Pro</div>
+                    <div class="container__price">$30</div>
+                    <div class="container__free">Free for life</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                    <div class="container__space">1 Gb Of Space</div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -60,7 +207,7 @@
                         </svg>
                     </div>
                     <div class="container_customers_image">
-                        <img src="../assets/img/customers-logo/Ellipse 7.png" class="container_customers_manager_icon"
+                        <img src="./assets/img/customers-logo/Ellipse 7.png" class="container_customers_manager_icon"
                             width="70px" height="70px" alt="image">
                         <div class="container_customers_manager_article">
                             <h4>Davis Rhiel Madsen</h4>
@@ -80,10 +227,10 @@
                         </svg>
                     </div>
                     <div class="container_customers_image">
-                        <img src="../assets/img/customers-logo/Ellipse 7-2.png" class="container_customers_manager_icon"
+                        <img src="./assets/img/customers-logo/Ellipse 7-2.png" class="container_customers_manager_icon"
                             width="70px" height="70px" alt="image">
                         <div class="container_customers_manager_article">
-                            <h4>Davis Rhiel Madsen</h4>
+                            <h4>Jaydon Rosser</h4>
                             <h5>Manager</h5>
                         </div>
                     </div>
@@ -101,10 +248,10 @@
                         </svg>
                     </div>
                     <div class="container_customers_image">
-                        <img src="../assets/img/customers-logo/Ellipse 7-3.png" class="container_customers_manager_icon"
+                        <img src="./assets/img/customers-logo/Ellipse 7-3.png" class="container_customers_manager_icon"
                             width="70px" height="70px" alt="image">
                         <div class="container_customers_manager_article">
-                            <h4>Davis Rhiel Madsen</h4>
+                            <h4>Cooper Dorwart</h4>
                             <h5>Manager</h5>
                         </div>
                     </div>
@@ -114,6 +261,7 @@
     </section>
 
     <section class="wrapper_desing">
+        <div class="dark_bg"></div>
         <div class="container_desing_content container_desing">
             <h2 class="container_desing_title">STYLISH AXURE DESIGN</h2>
             <div class="line"></div>
@@ -123,15 +271,34 @@
         </div>
     </section>
 
+    <section class="wrapper_contact_us">
+        <div class="container_contact_us">
+            <form class="form_contact_us_input">
+                <h2 class="container_contact_us_title">contact us</h2>
+                <div class="container_contact_us_line"></div>
+                <h5 class="container_contact_us_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                <div class="container_contact_us_form">
+                    <div class="container_contact_us_input">
+                        <input class="input" type="text" placeholder="Name">
+                        <input class="input" type="email" placeholder="Email" required>
+                        <input class="input" type="password" placeholder="Password" required>
+                    </div>
+                    <textarea class="message" placeholder="Message" name="Message">Message</textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer_container_social footer_container">
-            <a href="#"><img src="./img/social-logo/facebook_icon.png" alt="facebook"></a>
-            <a href="#"><img src="./img/social-logo/twitter_icon.png" alt="twitter"></a>
-            <a href="#"><img src="./img/social-logo/linkedin_icon.png" alt="linkedin"></a>
-            <a href="#"><img src="./img/social-logo/pinterest_icon.png" alt="pinterest"></a>
-            <a href="#"><img src="./img/social-logo/instagram_icon.png" alt="instagram"></a>
-            <a href="#"><img src="./img/social-logo/github_icon.png" alt="github"></a>
-            <a href="#"><img src="./img/social-logo/rss_icon.png" alt="rss"></a>
+            <a href="#"><img src="./assets/img/social-logo/facebook_icon.png" alt="facebook"></a>
+            <a href="#"><img src="./assets/img/social-logo/twitter_icon.png" alt="twitter"></a>
+            <a href="#"><img src="./assets/img/social-logo/linkedin_icon.png" alt="linkedin"></a>
+            <a href="#"><img src="./assets/img/social-logo/pinterest_icon.png" alt="pinterest"></a>
+            <a href="#"><img src="./assets/img/social-logo/instagram_icon.png" alt="instagram"></a>
+            <a href="#"><img src="./assets/img/social-logo/github_icon.png" alt="github"></a>
+            <a href="#"><img src="./assets/img/social-logo/rss_icon.png" alt="rss"></a>
         </div>
         <p class="footer_container_text">© 2015 Axure Themes</p>
     </footer>

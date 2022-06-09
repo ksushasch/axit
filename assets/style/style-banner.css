@@ -1,13 +1,8 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
 .container_banner {
-	max-width: calc(1170px + 15px * 2);
-	padding: 0 15px;
-	margin: 0 auto;
+	display: flex;
+	align-items: flex-start;
+	z-index: 1;
+	position: relative;
 }
 
 .banner {
@@ -16,44 +11,194 @@
 	background-image: url(../img/image.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
+}
+.banner::after {
+	content: '' ;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
 }
 
-.content_banner_title {
-	font-family: "Raleway";
+.banner_line {
+	width: 170px;
+	height: 1px;
+	background-color: #fff;
+	margin: 55px 0 0;
+}
+
+.content {
+	display: flex;
+	justify-content: stretch;
+}
+
+.banner_info > h1 {
+	color: #fff;
+	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 48px;
 	line-height: 56px;
-	text-transform: uppercase;
-	color: #ffffff;
+	max-width: 670px;
 }
 
-.content_banner_line {
-	width: 170px;
-	height: 1px;
-	background-color: #ffffff;
-	margin: 55px 0 42px 0;
+.banner_form {
+	background-color: #fff;
+	max-width: 470px;
+	width: 100%;
+	border-radius: 10px;
+	padding-top: 20px;
+	overflow: hidden;
+	margin-left: 30px;
 }
 
-.content_banner_text {
-	margin: 0 0 42px 0;
-	font-family: "Raleway";
+.banner_fields {
+	display: flex;
+	flex-direction: column;
+	padding: 0 50px;
+	margin-top: 50px;
+}
+
+.banner_fields > input {
+	border: none;
+	border-bottom: 1px solid #BDBDBD;
+	padding-bottom: 16px;
+	height: 38px;
+}
+
+.banner_form > h3 {
+	text-align: center;
+}
+
+.banner_form span {
+	color: #EC7979;
+}
+
+.banner_form > button {
+	width: 100%;
+	height: 60px;
+	background-color:#EC7979;
+	color: #fff;
+	border: none;
+	margin-top: 75px;
+}
+
+.banner_fields > input:not(:last-child) {
+	margin-bottom: 33px;
+}
+
+.banner_info > p {
+	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
-	color: #ffffff;
+	color: #fff;
+	margin-top: 42px;
+	max-width: 270px;
 }
-.content_banner > button {
+
+.banner_info > button {
 	width: 270px;
 	height: 58px;
-	font-family: "Open Sans";
-	font-style: normal;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 25px;
-	color: #ffffff;
+	margin-top: 42px;
 	background-color: transparent;
-	border: 1px solid #ffffff;
-	cursor: pointer;
+	color: #fff;
+	border: none;
+	border: 2px solid #fff;
+}
+
+@media (max-width: 1024px) {
+	.banner {
+		background-position: top center;
+	}
+
+	.banner_form {
+		max-width: 400px;
+	    width: 100%;
+	}
+
+	.banner_info > svg {
+		width: 183px;
+		height: 75px;
+	}
+
+	.banner_info > h1 {
+		max-width: 454px;
+		font-size: 36px;
+		line-height: 42px;
+		margin-top: 54px;
+	}
+
+	.banner_line {
+		width: 115px;
+		margin-top: 41px;
+	}
+
+	.banner_info > p {
+		max-width: 183px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.banner_info > button {
+		width: 183px;
+		height: 50px;
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	.banner_info {
+		margin-right: 36px;
+	}
+}
+
+@media (max-width: 768px) {
+	.banner {
+		background-position: top center;
+		padding: 84px 16px 50px;
+	}
+
+	.container_banner {
+		flex-direction: column;
+	}
+
+	.banner_info {
+		text-align: center;
+	}
+
+	.banner_info > svg {
+		display: none;
+	}
+
+	.banner_line {
+		width: 134px;
+		margin: 41px auto;
+	}
+
+	.banner_info > p {
+		max-width: 288px;
+		margin: 0 auto;
+	}
+
+	.banner_form {
+		max-width: 288px;
+	    width: 100%;
+		height: 381px;
+	}
+
+	.banner_form > h3 {
+		font-size: 14px;
+		line-height: 19px;
+	}
+
+	.banner_form > button {
+		width: 100%;
+		height: 60px;
+		margin-top: 52px;
+	}
 }
